@@ -1,0 +1,111 @@
+.Tab {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.Tab .nameList ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.Tab .nameList ul li {
+  text-align: left;
+  margin: 0 8px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  border-left: 5px solid transparent;
+  padding: 0 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.Tab .nameList ul li:hover {
+  border-left-color: pink !important;
+  color: pink;
+}
+
+.Tab .nameList ul li.active {
+  border-left-color: pink !important;
+  color: pink;
+}
+
+.Tab .details {
+  text-align: left;
+}
+.Tab .details h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.Tab .details ._name {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  background-color: rgba(241, 167, 179, 0.671);
+  display: inline-block;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+.Tab .details .date {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 2px 0;
+}
+.Tab .details .about p {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 2rem;
+  -webkit-column-gap: 2rem;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.Tab .details .about .angle {
+  color: pink;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 991px) {
+  .Tab {
+    grid-template-columns: 100%;
+    width: 90%;
+  }
+  .Tab .nameList {
+    margin-bottom: 30px;
+  }
+  .Tab .nameList ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .Tab .nameList ul li {
+    border-left: none;
+    border-bottom: 5px solid transparent;
+    text-align: center;
+    padding: 0;
+    margin: 0 15px;
+  }
+  .Tab .nameList ul li:hover {
+    border-bottom-color: pink !important;
+  }
+
+  .Tab .nameList ul li.active {
+    border-bottom-color: pink !important;
+  }
+
+  .Tab .details .about p .angle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 551px) {
+  .Tab {
+    width: 99%;
+    padding: 0 10px;
+  }
+}
