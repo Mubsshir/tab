@@ -31,7 +31,6 @@ const Tab = () => {
                         className={index === ind ? styles.active : ""}
                         key={emp.id}
                         onClick={() => { setIndex(ind) }}
-                        id={`"${ind}"`}
                     >
                         {emp.company}
                     </li>)}
