@@ -89,6 +89,7 @@
     text-align: center;
     padding: 0;
     margin: 0 15px;
+    transition: border 0.4s ease-in-out;
   }
   .Tab .nameList ul li:hover {
     border-bottom-color: pink !important;
